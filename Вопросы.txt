@@ -1,0 +1,16 @@
+1)What is the difference between Collection and Stream?
+Êîëëåêöèÿ ïîçâîëÿåò ğàáîòàòü ñ ıëåìåíòàìè ïî îòäåëüíîñòè, à stream íåò.
+2) What does the filter() method do?
+âîçâğàùàåò çàïèñè ñîîòâåòñòâóşùèå óñëîâèş
+
+3) What is a functional interface in Java 8?
+Ôóíêöèîíàëüíûé èíòåğôåéñ â Java – ıòî èíòåğôåéñ, 
+êîòîğûé ñîäåğæèò òîëüêî 1 àáñòğàêòíûé ìåòîä. 
+Îñíîâíîå íàçíà÷åíèå – èñïîëüçîâàíèå â ëÿìáäà âûğàæåíèÿõ è method reference.
+
+4) What Is a Default Method and When Do We Use It?
+Äåôîëòíûé ìåòîä - ìåòîä ñ òåëîì. Íóæåí ÷òîáû íå ïåğåïèñûâàòü îäèíàêîâûé êîä êàæäûé ğàç
+5) Syntax and Characteristics of a Lambda Expression
+(àğãóìåíòû) -> {òåëî}
+àğãóìåíòû ïåğåäàşòñÿ â òåëî è òàì ÷òî-òî ñ íèìè äåëàåòñÿ.
+Íàïğèìåğ (a,b) -> {return a+b;}
