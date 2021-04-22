@@ -4,6 +4,7 @@ import models.Admin;
 import models.Manager;
 import models.Worker;
 import report.Report;
+import report.logging.Logging;
 import repositories.UserRepository;
 
 import java.io.File;
@@ -14,6 +15,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Runner {
     public static void main(String[] args) throws IOException, InterruptedException {
+        Logging.printLogToFile("Start program....");
         /*
         FileInputStream fileInputStream = null;
         FileOutputStream fileOutputStream = null;
@@ -39,6 +41,7 @@ public class Runner {
         //File file = new File("D://readme.txt");
         ReadDirectory.readDirectory();
         UserRepository rep = new UserRepository();
+        Logging.printLogToFile("Save users");
         rep.saveUsers(new Admin("Nick1"));
         rep.saveUsers(new Worker("Nick2"));
         rep.saveUsers(new Admin("Nick3"));
@@ -47,8 +50,11 @@ public class Runner {
         rep.saveUsers(new Admin("Nick5"));
         rep.saveUsers(new Manager("Nick6"));
         rep.saveUsers(new Admin("Nick7"));
+        Logging.printLogToFile("Print ro file");
         Report.printReportToFile();
+        Logging.printLogToFile("File copy");
         FilesWorker.fileCopy(new File("src\\from.txt"), new File("src\\to.txt"));
+        Logging.printLogToFile("Done....");
 
     }
 }
