@@ -2,16 +2,24 @@ package models;
 
 import enums.PersonRole;
 
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.Objects;
 
 public abstract class Person {
     private  String name;
+    private Date registrationDate;
     private int id;
     private static int identificator = 0;
     PersonRole role;
     public Person(PersonRole role) {
+        registrationDate = new GregorianCalendar().getTime();
         id = ++identificator;
         this.role = role;
+    }
+    public Date getRegistrationDate() {
+        return registrationDate;
     }
     public String getName() {
         return name;
