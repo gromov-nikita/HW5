@@ -1,16 +1,9 @@
-1)What is the difference between Collection and Stream?
-Коллекция позволяет работать с элементами по отдельности, а stream нет.
-2) What does the filter() method do?
-возвращает записи соответствующие условию
-
-3) What is a functional interface in Java 8?
-Функциональный интерфейс в Java – это интерфейс, 
-который содержит только 1 абстрактный метод. 
-Основное назначение – использование в лямбда выражениях и method reference.
-
-4) What Is a Default Method and When Do We Use It?
-Дефолтный метод - метод с телом. Нужен чтобы не переписывать одинаковый код каждый раз
-5) Syntax and Characteristics of a Lambda Expression
-(аргументы) -> {тело}
-аргументы передаются в тело и там что-то с ними делается.
-Например (a,b) -> {return a+b;}
+1) What are the main classes of all streams?
+Object от него унаследованы InputStream и OutputStream 
+2) What are FileInputStream and FileOutputStream?
+Классы для работы с потоками ввода вывода данных
+Один используется для чтения байтов из файла другой для запись байтов в файл
+3) What System.out.println()?
+System - класс Out - поток вывода println() вывод строки с переносом на другую строку
+4) What is File class?
+File это класс для работы с файлами
